@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+   
+</head>
+<body>
+  <div class="banner">
+    <header class="navbar navbar-bright" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav  role="navigation">
+            <%if(role!=="admin" && role!=="user"){%>
+              <ul class="nav navbar-nav navbar-right">           
+                <li>
+                  <a href="/login">Books</a>
+                </li>
+                <li>
+                  <a href="/login">Authors</a>
+                </li>
+                <li>
+                  <a href="/login">Add new book</a>
+                </li>
+                <li>
+                  <a href="/login">Add new author</a>
+                </li>
+                <li>
+                  <a href="/login">Login</a>
+                </li>
+                <li>
+                  <a href="/signup">Signup</a>
+                </li>
+              </ul>
+              <%}%>
+              <%if(role=="admin" || role=="user"){%>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/books">Books</a>
+              </li>
+              <li>
+                <a href="/authors">Authors</a>
+              </li>
+              <%if(role=="admin"){%>
+              <li>
+                <a href="/newbook">Add new book</a>
+              </li>
+              <li>
+                <a href="/newauthor">Add new author</a>
+              </li>
+              <%}%>
+              <li>
+                <a href="/logout">Log out</a>
+              </li>
+            </ul>
+            <%}%>
+          </nav>
+        </div>
+      </header>
+      <div class="row">
+    <h1 id="heads">Library</h1>
+  </div>
+  <div class="row">   
+    
+    <div class="row">
+      <div class="col-md-12">
+       <br>
+       <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="members">
+    <div class="row">
+      <div class="col-md-12">
+      <h2 id="heads1">Famous Quotes...</h2>
+    </div>
+  </div>
+     <div class="row">
+       <div class="col-md-6">
+        <div class="card" style="width: 50rem;">
+          <div class="card-body" style="margin-left: 20%; text-align: justify;">
+            <p class="card-text">“Reading is an act of civilization; it’s one of the greatest acts of civilization because it takes the free raw material of the mind and builds castles of possibilities.”
+              ―Ben Okri</p>
+          </div>
+        </div>
+    </div>
+      <div class="col-md-6">
+       <div class="card" style="width: 50rem;">
+         <div class="card-body" style="margin-left: 30%; text-align: justify;">
+           <p class="card-text">“Libraries will get you through times of no money better than money will get you through times of no libraries.”
+            ―Anne Herbert </p>
+         </div>
+       </div>
+   </div>
+    
+    </div> 
+  </div>
+  
+<div class="row">
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+      <h4>Connect with us at</h4>
+      </div>
+      <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-facebook-square" id="fb"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-twitter-square" id="twitter"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-instagram-square" id="insta"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-linkedin-in" id="linkedln"></i>
+  
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">©2021Copyright|
+    <a href="#"> LibraryApp</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+    <script src="https://kit.fontawesome.com/864a7bb157.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

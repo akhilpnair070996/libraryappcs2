@@ -1,0 +1,137 @@
+
+body {
+    background-image: url(/images/bg.jpg);
+   background-size: cover;
+    position: relative;
+    /* max-width: 800px; Maximum width */
+    margin: 0 auto; /* Center it */
+    width: 100%;
+    height: 130vh;
+  }
+  
+  #heads {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    margin-top: 6%;
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */
+    height: 12vh;
+    color: black; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /*Some padding */ 
+  }
+ 
+  .navbar{
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */
+    height: 13.5vh;
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+  }
+  .navbar a{
+    color:black;
+  }
+  
+  #heads{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer {
+    margin-top:40px;
+    padding-top:40px;
+    padding-bottom:40px;
+   
+  }
+  #books1, #books2{
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */
+    color: black;
+  }
+  #books1 a{
+    color: black;
+  }
+  #books2 a{
+    color: black;
+  }
+  h4{
+    color: black;
+  }
+  #novel{
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: 3%;
+    height: 7vh;
+  }
+  #members{ 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #members p{
+    font-size: medium;
+  }
+  #fb{
+   font-size: xx-large;
+  }
+  #twitter{
+    font-size: xx-large;
+   }
+   #insta{
+    font-size: xx-large;
+   }
+  #booksdetail{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #booksection{
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */  }
+  #novel{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #forupdate{
+    background: rgb(107, 105, 105); /* Fallback color */
+    background: rgba(107, 105, 115,0.5); /* Background with 0.5 opacity */
+    height: 60px;
+  }
+  #myButton{
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 12pt;
+    margin-top: 15px;
+   height: 30px;
+   width: 70px;
+   padding-top: 2px;
+   background-color: #866767;
+   border: #866767;
+  }
+  #myButtons{
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 12pt;
+    margin-top: 15px;
+   height: 30px;
+   width: 70px;
+   padding-top: 2px;
+   background-color: #866767;
+   border: #866767;
+  }
+
+  @media screen and (min-width: 768px) {
+    #masthead h1 {
+      font-size: 80px;
+    }
+  }
+  
+  
